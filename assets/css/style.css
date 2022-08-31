@@ -72,7 +72,7 @@ p {
   height: 120px;
   transform: translateX(-50%) translateY(-50%);
   z-index: 3;
-  background-image: url("/assets/images/tudor-rose.png");
+  background-image: url("../../assets/images/tudor-rose.png");
   background-size: 100%;
   background-position-y: -1px;
   border-radius: 50%;
