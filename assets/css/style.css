@@ -302,7 +302,8 @@ p {
 }
 
 .staff-pick .cover {
-  height: 620px;
+  width: 100%;
+  aspect-ratio: 0.71;
   background-size: cover;
   background-position: center center;
   outline: 2px solid #ecf2ec;
@@ -317,9 +318,6 @@ p {
   }
 }
 @media (max-width: 1399.98px) {
-  .staff-pick .cover {
-    height: 445px;
-  }
   #header #content-2 p,
 #header #content-3 p {
     font-size: 1.25rem;
@@ -335,9 +333,6 @@ p {
   }
   #staff-picks .row div:nth-child(-n+2) .staff-pick {
     margin-bottom: 50px;
-  }
-  .staff-pick .cover {
-    height: 600px;
   }
   #header #content-logo .tudor-rose {
     padding: 40px;
@@ -364,9 +359,6 @@ p {
   .featured-item-2,
 .featured-item-6 {
     box-shadow: inset -2px 2px 0 0 #ecf2ec, -2px 2px 0 0 #ecf2ec;
-  }
-  .staff-pick .cover {
-    height: 470px;
   }
   #header #content-1 {
     width: 126px;
@@ -448,9 +440,6 @@ p {
   }
   #staff-picks .row div:nth-child(-n+2) .staff-pick {
     margin-bottom: 50px;
-  }
-  .staff-pick .cover {
-    height: 208px;
   }
   .staff-pick .title {
     font-size: 1rem;
