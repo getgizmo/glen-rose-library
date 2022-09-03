@@ -32,7 +32,7 @@ p {
   }
 
   #content-1 {
-    width: 200px;
+    width: 150px;
     border-right: 2px solid #ecf2ec;
     display: flex;
     flex-wrap: wrap;
@@ -46,7 +46,7 @@ p {
 
     #site-title {
       flex: 0 1 auto;
-      font-size: 3rem;
+      font-size: 2.5rem;
       line-height: 1;
       padding: 15px;
       text-transform: uppercase;
@@ -60,7 +60,7 @@ p {
     }
     .info,
     .menu-links {
-      padding: 22px 0;
+      padding: 16px 0;
     }
     .menu-links {
       a {
@@ -78,12 +78,13 @@ p {
       height: 120px;
       transform: translateX(-50%) translateY(-50%);
       z-index: 3;
-      background-image: url("../../assets/images/tudor-rose.png");
-      background-size: 100%;
-      background-position-y: -1px;
+      background-image: url("../../assets/images/tudor-rose.svg");
+      background-size: 80%;
+      background-position: center 10px;
       border-radius: 50%;
       border: 2px solid #ecf2ec;
-      padding: 50px;
+      background-color: #222323;
+      background-repeat: no-repeat;
     }
   }
   #content-3 {
@@ -93,7 +94,7 @@ p {
     }
     .info,
     .menu-links {
-      padding: 22px 0;
+      padding: 16px 0;
     }
     .menu-links {
       a {
@@ -102,14 +103,16 @@ p {
     }
   }
   #content-4 {
-    width: 200px;
+    width: 150px;
     .sign-up-log-in {
       display: flex;
       border-bottom: 2px solid #ecf2ec;
 
       a {
+        flex: 0.5;
         text-align: center;
         padding: 22px 0;
+        font-size: 1.25rem;
         text-transform: uppercase;
 
         &:hover {
@@ -117,11 +120,9 @@ p {
         }
       }
       a:first-of-type {
-        flex: 0.55;
         border-left: 2px solid #ecf2ec;
       }
       a:last-of-type {
-        flex: 0.46;
         border-left: 2px solid #ecf2ec;
       }
     }
@@ -348,7 +349,7 @@ p {
 
   #header #content-2 .info,
   #header #content-3 .info {
-    padding: 28px 0;
+    padding: 22px 0;
   }
 }
 
@@ -359,15 +360,14 @@ p {
   #staff-picks .row div:nth-child(-n + 2) .staff-pick {
     margin-bottom: 50px;
   }
-
   #header #content-logo .tudor-rose {
-    padding: 40px;
-    height: 75px;
-    width: 75px;
+    height: 90px;
+    width: 90px;
+    background-size: 75%;
   }
   #header #content-2 .info,
   #header #content-3 .info {
-    padding: 23px 0;
+    padding: 17px 0;
   }
   #header #content-2 .info p,
   #header #content-3 .info p {
@@ -406,6 +406,9 @@ p {
       width: 126px;
       position: relative;
       #mobile-nav {
+        cursor: pointer;
+        width: 100%;
+        height: 100%;
         img {
           position: absolute;
           top: 50%;
@@ -414,6 +417,22 @@ p {
           width: 50px;
         }
       }
+    }
+  }
+  #mobile-nav-menu {
+    display: none;
+    a {
+      display: block;
+      padding: 5px 20px;
+      border-left: 2px solid #ecf2ec;
+      border-right: 2px solid #ecf2ec;
+      border-top: 2px solid #ecf2ec;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 3rem;
+      color: #ecf2ec;
+      background: #333;
+      font-weight: bold;
     }
   }
 }
@@ -425,6 +444,12 @@ p {
       #site-title {
         font-size: 1.5rem;
       }
+    }
+
+    #content-logo .tudor-rose {
+      height: 80px;
+      width: 80px;
+      background-position-y: 9px;
     }
 
     #content-4 {

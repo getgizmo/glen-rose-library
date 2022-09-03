@@ -29,7 +29,7 @@ p {
   font-size: 1.75rem;
 }
 #header #content-1 {
-  width: 200px;
+  width: 150px;
   border-right: 2px solid #ecf2ec;
   display: flex;
   flex-wrap: wrap;
@@ -42,7 +42,7 @@ p {
 }
 #header #content-1 #site-title {
   flex: 0 1 auto;
-  font-size: 3rem;
+  font-size: 2.5rem;
   line-height: 1;
   padding: 15px;
   text-transform: uppercase;
@@ -56,7 +56,7 @@ p {
 }
 #header #content-2 .info,
 #header #content-2 .menu-links {
-  padding: 22px 0;
+  padding: 16px 0;
 }
 #header #content-2 .menu-links a {
   text-transform: uppercase;
@@ -72,12 +72,13 @@ p {
   height: 120px;
   transform: translateX(-50%) translateY(-50%);
   z-index: 3;
-  background-image: url("../../assets/images/tudor-rose.png");
-  background-size: 100%;
-  background-position-y: -1px;
+  background-image: url("../../assets/images/tudor-rose.svg");
+  background-size: 80%;
+  background-position: center 10px;
   border-radius: 50%;
   border: 2px solid #ecf2ec;
-  padding: 50px;
+  background-color: #222323;
+  background-repeat: no-repeat;
 }
 #header #content-3 {
   flex: 0.5;
@@ -87,32 +88,32 @@ p {
 }
 #header #content-3 .info,
 #header #content-3 .menu-links {
-  padding: 22px 0;
+  padding: 16px 0;
 }
 #header #content-3 .menu-links a {
   text-transform: uppercase;
 }
 #header #content-4 {
-  width: 200px;
+  width: 150px;
 }
 #header #content-4 .sign-up-log-in {
   display: flex;
   border-bottom: 2px solid #ecf2ec;
 }
 #header #content-4 .sign-up-log-in a {
+  flex: 0.5;
   text-align: center;
   padding: 22px 0;
+  font-size: 1.25rem;
   text-transform: uppercase;
 }
 #header #content-4 .sign-up-log-in a:hover {
   background-color: rgba(255, 255, 255, 0.1);
 }
 #header #content-4 .sign-up-log-in a:first-of-type {
-  flex: 0.55;
   border-left: 2px solid #ecf2ec;
 }
 #header #content-4 .sign-up-log-in a:last-of-type {
-  flex: 0.46;
   border-left: 2px solid #ecf2ec;
 }
 
@@ -324,7 +325,7 @@ p {
   }
   #header #content-2 .info,
 #header #content-3 .info {
-    padding: 28px 0;
+    padding: 22px 0;
   }
 }
 @media (max-width: 1199.98px) {
@@ -335,13 +336,13 @@ p {
     margin-bottom: 50px;
   }
   #header #content-logo .tudor-rose {
-    padding: 40px;
-    height: 75px;
-    width: 75px;
+    height: 90px;
+    width: 90px;
+    background-size: 75%;
   }
   #header #content-2 .info,
 #header #content-3 .info {
-    padding: 23px 0;
+    padding: 17px 0;
   }
   #header #content-2 .info p,
 #header #content-3 .info p {
@@ -373,12 +374,33 @@ p {
     width: 126px;
     position: relative;
   }
+  #header #content-4 #mobile-nav {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+  }
   #header #content-4 #mobile-nav img {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
     width: 50px;
+  }
+  #mobile-nav-menu {
+    display: none;
+  }
+  #mobile-nav-menu a {
+    display: block;
+    padding: 5px 20px;
+    border-left: 2px solid #ecf2ec;
+    border-right: 2px solid #ecf2ec;
+    border-top: 2px solid #ecf2ec;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 3rem;
+    color: #ecf2ec;
+    background: #333;
+    font-weight: bold;
   }
 }
 @media (max-width: 767.98px) {
@@ -387,6 +409,11 @@ p {
   }
   #header #content-1 #site-title {
     font-size: 1.5rem;
+  }
+  #header #content-logo .tudor-rose {
+    height: 80px;
+    width: 80px;
+    background-position-y: 9px;
   }
   #header #content-4 {
     width: 102px;

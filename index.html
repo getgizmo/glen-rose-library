@@ -7,9 +7,13 @@
   <meta name="description" content="description" />
   <meta name="author" content="author" />
   <meta name="keywords" content="keywords" />
+  <link rel="icon" type="image/svg+xml" href="/assets/images/favicon.png">
   <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
   <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css" />
+  <link rel="prefetch" href="assets/images/mobile-nav-opened.svg">
   <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/jquery-3.6.0.min.js"></script>
+  <script src="assets/js/glen.rose.library.js"></script>
 </head>
 
 <body>
@@ -53,7 +57,8 @@
     <div id="content-4">
 
       <div id="mobile-nav" class="d-lg-none">
-        <img src="assets/images/mobile-nav.png">
+        <img src="assets/images/mobile-nav-closed.svg">
+        <img src="assets/images/mobile-nav-opened.svg" style="display: none;">
       </div>
 
       <div class="d-none d-lg-flex sign-up-log-in">
@@ -71,13 +76,20 @@
     </div>
   </div>
 
+  <div id="mobile-nav-menu" class="d-lg-none">
+    <a href="#">media</a>
+    <a href="#">services</a>
+    <a href="#">events</a>
+    <a href="#">contacts</a>
+  </div>
+
   <div id="home">
     <div class="container-fluid">
       <div class="row gx-0">
         <div class="col-xxl-6 col-xl-5 d-none d-xl-flex">
           <div id="hero">
             <div class="text-center">
-              <img src="assets/images/tudor-rose-thorned.png" />
+              <img src="assets/images/tudor-rose-thorned.svg" />
             </div>
 
             <div class="hero-text d-xxl-flex justify-content-between">
